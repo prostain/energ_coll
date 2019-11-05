@@ -1,0 +1,128 @@
+$mobile_size : 370px;
+$laptop_size : 1020px;
+$jaune :#fcb731;
+$vert : #b3d143;
+$bleu : #00afec;
+$marron : #c3a575;
+html,body
+{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.container
+{
+
+}
+.bandeau
+{
+  background-image: url("../svg/points.svg");
+  padding: 5% 0;
+}
+.header img
+{
+  width: 100%;
+  height: auto;
+}
+
+.container_logo-title
+{
+  text-align: center;
+}
+
+.container_logo-title img
+{
+  width: 30%;
+  height: auto;
+  margin: 1% 0;
+
+}
+
+.container_flex-stats {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  margin: 0 auto;
+  justify-content: center;
+
+}
+
+.container_flex-stats > div {
+  padding: 10px;
+  text-align: center;
+  font-size: 20px;
+  width: 50%;
+
+}
+.container_flex-stats > div img {
+  margin: 0 auto;
+  width: 50%;
+  height: auto;
+
+}
+.container_flex-block {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  margin: 0 auto;
+  width: auto;
+
+}
+
+.container_flex-bock > div {
+  max-width: 100%;
+  margin: 20px;
+  text-align: center;
+  font-size: 20px;
+
+}
+
+
+.couleur-jaune
+{
+  color: $jaune;
+}
+.couleur-vert
+{
+  color: $vert;
+}
+.couleur-bleu
+{
+  color: $bleu;
+}
+.couleur-marron
+{
+  color: $marron;
+}
+
+
+@media screen and (min-width: $laptop_size){
+
+  .container
+  {
+    padding: 0 20%;
+  }
+
+  .container_flex-stats {
+    width: auto;
+
+  }
+
+  .container_flex-stats > div {
+    width: initial;
+
+  }
+
+  .container_flex-block {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .container_flex-bock > div {
+    margin: 0;
+    font-size: 20px;
+    width: 50%;
+
+  }
+
+}

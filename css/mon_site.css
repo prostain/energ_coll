@@ -1,0 +1,150 @@
+.nav ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-flow: column wrap;
+  width: 100%;
+}
+
+.nav ul li {
+  width: 100%;
+}
+
+.nav a {
+  padding: 1em;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+
+.nav ul {
+  display: -webkit-box;
+  display: flex;
+  /*1*/
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  /*2*/
+  -webkit-box-pack: center;
+          justify-content: center;
+  /*3*/
+}
+
+@media (min-width: 1020px) {
+  .nav ul .nav ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+            flex-flow: row wrap;
+  }
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.bandeau {
+  background-image: url("../svg/points.svg");
+  padding: 5% 0;
+}
+
+.header img {
+  width: 100%;
+  height: auto;
+}
+
+.container_logo-title {
+  text-align: center;
+}
+
+.container_logo-title img {
+  width: 30%;
+  height: auto;
+  margin: 1% 0;
+}
+
+.container_flex-stats {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  margin: 0 auto;
+  -webkit-box-pack: center;
+          justify-content: center;
+}
+
+.container_flex-stats > div {
+  padding: 10px;
+  text-align: center;
+  font-size: 20px;
+  width: 50%;
+}
+
+.container_flex-stats > div img {
+  margin: 0 auto;
+  width: 50%;
+  height: auto;
+}
+
+.container_flex-block {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  margin: 0 auto;
+  width: auto;
+}
+
+.container_flex-bock > div {
+  max-width: 100%;
+  margin: 20px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.couleur-jaune {
+  color: #fcb731;
+}
+
+.couleur-vert {
+  color: #b3d143;
+}
+
+.couleur-bleu {
+  color: #00afec;
+}
+
+.couleur-marron {
+  color: #c3a575;
+}
+
+@media screen and (min-width: 1020px) {
+  .container {
+    padding: 0 20%;
+  }
+  .container_flex-stats {
+    width: auto;
+  }
+  .container_flex-stats > div {
+    width: initial;
+  }
+  .container_flex-block {
+    display: -webkit-box;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .container_flex-bock > div {
+    margin: 0;
+    font-size: 20px;
+    width: 50%;
+  }
+}
+
+/*# sourceMappingURL=mon_site.css.map */
